@@ -10,7 +10,7 @@ class CustomerController extends BaseController
 {
     public function register()
     {
-        return view('customers_register');
+        return view('Customer/customers_register');
     }
 
     public function processRegistration()
@@ -103,7 +103,7 @@ class CustomerController extends BaseController
 
             public function login()
         {
-            return view('customers_sign');
+            return view('Customer/customers_sign');
         }
 
         public function processLogin()
@@ -149,7 +149,7 @@ class CustomerController extends BaseController
 
         public function forgotPassword()
         {
-            return view('customers_forgotpassword'); // Giao diện quên mật khẩu
+            return view('Customer/customers_forgotpassword'); // Giao diện quên mật khẩu
         }
         
         public function processForgotPassword()

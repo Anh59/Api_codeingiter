@@ -5,56 +5,14 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
+$routes->get('about', 'Home::index1');
+$routes->get('index', 'Home::index2');
+$routes->get('blog', 'Home::index3');
+$routes->get('contact', 'Home::index4');
+$routes->get('element', 'Home::index5');
+$routes->get('layout', 'Home::index6');
+$routes->get('test', 'Home::index7');
 // $routes->get('/test', 'TestController::index');
-
-
-$routes->get('/login', 'LoginController::index');
-$routes->post('/login', 'LoginController::sentlogin');
-
-$routes->get('/register', 'RegisterController::index');
-$routes->post('/register', 'RegisterController::sentregister');
-
-$routes->get('/table', 'RegisterController::datatable');
-
-$routes->get('/datatable', 'RegisterController::datatable');
-$routes->get('/testdatatable', 'RegisterController::testdatatable');
-
-$routes->delete('/registercontroller/deleteUser/(:num)', 'RegisterController::deleteUser/$1');  
-
-
-$routes->get('/register', 'RegisterController::index');
-$routes->post('/register', 'RegisterController::sentregister');
-$routes->get('/verify', 'RegisterController::verify');
-$routes->post('/confirm-otp', 'RegisterController::confirmOTP');
-
-
-$routes->get('/request-reset', 'PasswordController::requestReset');
-$routes->post('/request-reset', 'PasswordController::sendResetOTP');
-$routes->get('/verify-reset-otp', 'PasswordController::verifyResetOTP');
-$routes->post('/verify-reset-otp', 'PasswordController::confirmResetOTP');
-$routes->get('/reset-password', 'PasswordController::resetPassword');
-$routes->post('/reset-password', 'PasswordController::updatePassword');
-
-
-
-
-
-$routes->group('api', function($routes) {
-   
-    $routes->resource('user', ['controller' => 'APIController']);
-    $routes->post('/user','APIController::create');
-    $routes->get('/user/(:num)', 'APIController::show/$1');
-    $routes->put('/user/(:num)', 'APIController::update/$1');
-    $routes->delete('/user/(:num)', 'APIController::delete/$1');
-    $routes->post('/user/(:num)', 'APIController::filecode/$1');
-
-
- 
-});
-
-
-
 
 $routes->group('api_Customers', function($routes) {
    
