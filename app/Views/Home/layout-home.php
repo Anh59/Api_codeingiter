@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Travelix</title>
+<title><?= $this->renderSection('title') ?></title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Travelix Project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
-
 <link rel="stylesheet" type="text/css" href="<?=base_url('Home-css/styles/bootstrap4/bootstrap.min.css')?>">
 <link href="<?=base_url('Home-css/plugins/font-awesome-4.7.0/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="<?=base_url('Home-css/plugins/OwlCarousel2-2.2.1/owl.carousel.css')?>">
 <link rel="stylesheet" type="text/css" href="<?=base_url('Home-css/plugins/OwlCarousel2-2.2.1/owl.theme.default.css')?>">
 <link rel="stylesheet" type="text/css" href="<?=base_url('Home-css/plugins/OwlCarousel2-2.2.1/animate.css')?>">
-<link rel="stylesheet" type="text/css" href="<?= base_url('Home-css/styles/about_styles.css')?>">
-<link rel="stylesheet" type="text/css" href="<?= base_url('Home-css/styles/about_responsive.css')?>">
+<?= $this->renderSection('Home-css') ?>
+
 </head>
 <body>
 
@@ -123,7 +119,7 @@
 	<!-- home -->
 	
 
-    <?= $this->renderSection('content') ?>
+    <?= $this->renderSection('Home-content') ?>
 
     <footer class="footer">
 		<div class="container">
@@ -271,6 +267,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="<?= base_url('Home-css/styles/bootstrap4/bootstrap.min.js'); ?>"></script>
     <script src="<?= base_url('Home-css/plugins/OwlCarousel2-2.2.1/owl.carousel.js'); ?>"></script>
     <script src="<?= base_url('Home-css/plugins/easing/easing.js'); ?>"></script>
-    <script src="<?= base_url('Home-css/js/about_custom.js'); ?>"></script>
+	
+	<?= $this->renderSection('Home-scripts') ?>
+
+    
 </body>
 </html>

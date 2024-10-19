@@ -36,5 +36,12 @@ class Home extends BaseController
     {
         return view('Home/test');
     }
-    
+    public function index8(): string
+    {
+        return view('Home/offers');
+    }
+    public function index9(): string
+    {
+        return view('Home/single_listing');
+    }
 }

@@ -6,15 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Travelix Project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="<?= base_url('Home-css/styles/bootstrap4/bootstrap.min.css'); ?>">
+<link href="<?= base_url('Home-css/plugins/font-awesome-4.7.0/css/font-awesome.min.css'); ?>" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="<?= base_url('Home-css/plugins/OwlCarousel2-2.2.1/owl.carousel.css'); ?>">
+<link rel="stylesheet" type="text/css" href="<?= base_url('Home-css/plugins/OwlCarousel2-2.2.1/owl.theme.default.css'); ?>">
+<link rel="stylesheet" type="text/css" href="<?= base_url('Home-css/plugins/OwlCarousel2-2.2.1/animate.css'); ?>">
+<link rel="stylesheet" type="text/css" href="<?= base_url('Home-css/styles/main_styles.css'); ?>">
+<link rel="stylesheet" type="text/css" href="<?= base_url('Home-css/styles/responsive.css'); ?>">
 
 
-<link rel="stylesheet" type="text/css" href="<?=base_url('Home-css/styles/bootstrap4/bootstrap.min.css')?>">
-<link href="<?=base_url('Home-css/plugins/font-awesome-4.7.0/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="<?=base_url('Home-css/plugins/OwlCarousel2-2.2.1/owl.carousel.css')?>">
-<link rel="stylesheet" type="text/css" href="<?=base_url('Home-css/plugins/OwlCarousel2-2.2.1/owl.theme.default.css')?>">
-<link rel="stylesheet" type="text/css" href="<?=base_url('Home-css/plugins/OwlCarousel2-2.2.1/animate.css')?>">
-<link rel="stylesheet" type="text/css" href="<?=base_url('Home-css/styles/about_styles.css')?>">
-<link rel="stylesheet" type="text/css" href="<?=base_url('Home-css/styles/about_responsive.css')?>">
 </head>
 
 <body>
@@ -62,8 +62,8 @@
 						</div>
 						<div class="main_nav_container ml-auto">
 							<ul class="main_nav_list">
-								<li class="main_nav_item"><a href="index.html">home</a></li>
-								<li class="main_nav_item"><a href="#">about us</a></li>
+								<li class="main_nav_item"><a href="#">home</a></li>
+								<li class="main_nav_item"><a href="about.html">about us</a></li>
 								<li class="main_nav_item"><a href="offers.html">offers</a></li>
 								<li class="main_nav_item"><a href="blog.html">news</a></li>
 								<li class="main_nav_item"><a href="contact.html">contact</a></li>
@@ -96,7 +96,7 @@
 						<form id="search_form" class="search_form bez_1">
 							<input type="search" class="search_content_input bez_1">
 						</form>
-						
+
 						<div class="hamburger">
 							<i class="fa fa-bars trans_200"></i>
 						</div>
@@ -112,8 +112,8 @@
 			<div class="menu_close_container"><div class="menu_close"></div></div>
 			<div class="logo menu_logo"><a href="#"><img src="<?= base_url('Home-css/images/logo.png'); ?>" alt=""></a></div>
 			<ul>
-				<li class="menu_item"><a href="index.html">home</a></li>
-				<li class="menu_item"><a href="#">about us</a></li>
+				<li class="menu_item"><a href="#">home</a></li>
+				<li class="menu_item"><a href="about.html">about us</a></li>
 				<li class="menu_item"><a href="offers.html">offers</a></li>
 				<li class="menu_item"><a href="blog.html">news</a></li>
 				<li class="menu_item"><a href="contact.html">contact</a></li>
@@ -123,7 +123,7 @@
 
 	<!-- Home -->
 
-    <div class="home">
+	<div class="home">
 		
 		<!-- Home Slider -->
 
@@ -1139,7 +1139,7 @@
 
 	<!-- Footer -->
 
-    <footer class="footer">
+	<footer class="footer">
 		<div class="container">
 			<div class="row">
 
@@ -1170,8 +1170,7 @@
 							
 							<!-- Footer blog item -->
 							<div class="footer_blog_item clearfix">
-								<div class="footer_blog_image"><img src="<?= base_url('Home-css/images/footer_blog_1.jpg'); ?>" alt="https://unsplash.com/@avidenov">
-								</div>
+								<div class="footer_blog_image"><img src="<?= base_url('Home-css/images/footer_blog_1.jpg'); ?>" alt="https://unsplash.com/@avidenov"></div>
 								<div class="footer_blog_content">
 									<div class="footer_blog_title"><a href="blog.html">Travel with us this year</a></div>
 									<div class="footer_blog_date">Nov 29, 2017</div>
@@ -1180,7 +1179,7 @@
 							
 							<!-- Footer blog item -->
 							<div class="footer_blog_item clearfix">
-								<div class="footer_blog_image"><img src="<?= base_url('Home-css/images/footer_blog_2.jpg');?>" alt="https://unsplash.com/@deannaritchie'); ?>"></div>
+								<div class="footer_blog_image"><img src="<?= base_url('Home-css/images/footer_blog_2.jpg'); ?>" alt="https://unsplash.com/@deannaritchie"></div>
 								<div class="footer_blog_content">
 									<div class="footer_blog_title"><a href="blog.html">New destinations for you</a></div>
 									<div class="footer_blog_date">Nov 29, 2017</div>
@@ -1189,7 +1188,7 @@
 
 							<!-- Footer blog item -->
 							<div class="footer_blog_item clearfix">
-								<div class="footer_blog_image"><img src="<?= base_url('Home-css/images/footer_blog_3.jpg')?>" alt="https://unsplash.com/@bergeryap87'); ?>"></div>
+								<div class="footer_blog_image"><img src="<?= base_url('Home-css/images/footer_blog_3.jpg'); ?>" alt="https://unsplash.com/@bergeryap87"></div>
 								<div class="footer_blog_content">
 									<div class="footer_blog_title"><a href="blog.html">Travel with us this year</a></div>
 									<div class="footer_blog_date">Nov 29, 2017</div>
@@ -1266,8 +1265,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					<div class="footer_nav_container d-flex flex-row align-items-center justify-content-lg-end">
 						<div class="footer_nav">
 							<ul class="footer_nav_list">
-								<li class="footer_nav_item"><a href="index.html">home</a></li>
-								<li class="footer_nav_item"><a href="#">about us</a></li>
+								<li class="footer_nav_item"><a href="#">home</a></li>
+								<li class="footer_nav_item"><a href="about.html">about us</a></li>
 								<li class="footer_nav_item"><a href="offers.html">offers</a></li>
 								<li class="footer_nav_item"><a href="blog.html">news</a></li>
 								<li class="footer_nav_item"><a href="contact.html">contact</a></li>
@@ -1281,15 +1280,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 </div>
 
+<script src="<?= base_url('Home-css/js/jquery-3.2.1.min.js'); ?>"></script>
+<script src="<?= base_url('Home-css/styles/bootstrap4/popper.js'); ?>"></script>
+<script src="<?= base_url('Home-css/styles/bootstrap4/bootstrap.min.js'); ?>"></script>
+<script src="<?= base_url('Home-css/plugins/OwlCarousel2-2.2.1/owl.carousel.js'); ?>"></script>
+<script src="<?= base_url('Home-css/plugins/easing/easing.js'); ?>"></script>
+<script src="<?= base_url('Home-css/js/custom.js'); ?>"></script>
 
-    <script src="<?= base_url('Home-css/js/jquery-3.2.1.min.js'); ?>"></script>
-    <script src="<?=base_url('Home-css/plugins/ScrollMagic/ScrollMagic.min.js')?>"></script>
-
-    <script src="<?= base_url('Home-css/styles/bootstrap4/popper.js'); ?>"></script>
-    <script src="<?= base_url('Home-css/styles/bootstrap4/bootstrap.min.js'); ?>"></script>
-    <script src="<?= base_url('Home-css/plugins/OwlCarousel2-2.2.1/owl.carousel.js'); ?>"></script>
-    <script src="<?= base_url('Home-css/plugins/easing/easing.js'); ?>"></script>
-    <script src="<?= base_url('Home-css/js/about_custom.js'); ?>"></script>
 
 </body>
 

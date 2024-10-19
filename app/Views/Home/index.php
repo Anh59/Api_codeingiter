@@ -1,6 +1,16 @@
 <?= $this->extend('Home/layout-home'); ?>
 
-<?= $this->section('content'); ?>
+<?= $this->section('title') ?>
+Index
+<?= $this->endSection() ?>
+
+<?= $this->section('Home-css') ?>
+<link rel="stylesheet" type="text/css" href="<?= base_url('Home-css/styles/main_styles.css'); ?>">
+<link rel="stylesheet" type="text/css" href="<?= base_url('Home-css/styles/responsive.css'); ?>">
+<?= $this->endSection() ?>
+
+
+<?= $this->section('Home-content'); ?>
 
 	<!-- Home -->
 
@@ -1019,7 +1029,10 @@
 	</div>
 
 	<!-- Footer -->
-	<script src="<?= base_url('Home-css/js/jquery-3.2.1.min.js'); ?>"></script>
+
    
 
+	<?= $this->endSection(); ?>
+	<?= $this->section('Home-scripts') ?>
+	<script src="<?= base_url('Home-css/js/custom.js'); ?>"></script>
 	<?= $this->endSection(); ?>

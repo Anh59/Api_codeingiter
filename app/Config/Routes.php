@@ -9,9 +9,11 @@ $routes->get('about', 'Home::index1');
 $routes->get('index', 'Home::index2');
 $routes->get('blog', 'Home::index3');
 $routes->get('contact', 'Home::index4');
-$routes->get('element', 'Home::index5');
+$routes->get('elements', 'Home::index5');
 $routes->get('layout', 'Home::index6');
 $routes->get('test', 'Home::index7');
+$routes->get('single_listing', 'Home::index9');
+$routes->get('offers', 'Home::index8');
 // $routes->get('/test', 'TestController::index');
 
 $routes->group('api_Customers', function($routes) {

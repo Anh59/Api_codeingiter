@@ -6,10 +6,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Travelix Project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
-<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="styles/elements_styles.css">
-<link rel="stylesheet" type="text/css" href="styles/elements_responsive.css">
+<link rel="stylesheet" type="text/css" href="<?= base_url('Home-css/styles/bootstrap4/bootstrap.min.css'); ?>">
+<link rel="stylesheet" type="text/css" href="<?= base_url('Home-css/plugins/font-awesome-4.7.0/css/font-awesome.min.css'); ?>">
+<link rel="stylesheet" type="text/css" href="<?= base_url('Home-css/styles/elements_styles.css'); ?>">
+<link rel="stylesheet" type="text/css" href="<?= base_url('Home-css/styles/elements_responsive.css'); ?>">
 </head>
 
 <body>
@@ -53,7 +53,7 @@
 				<div class="row">
 					<div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
 						<div class="logo_container">
-							<div class="logo"><a href="#"><img src="images/logo.png" alt="">travelix</a></div>
+							<div class="logo"><a href="#"><img src="<?= base_url('Home-css/images/logo.png'); ?>" alt="">travelix</a></div>
 						</div>
 						<div class="main_nav_container ml-auto">
 							<ul class="main_nav_list">
@@ -105,7 +105,7 @@
 	<div class="menu trans_500">
 		<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
 			<div class="menu_close_container"><div class="menu_close"></div></div>
-			<div class="logo menu_logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+			<div class="logo menu_logo"><a href="#"><img src="<?= base_url('Home-css/images/logo.png'); ?>" alt=""></a></div>
 			<ul>
 				<li class="menu_item"><a href="index.html">home</a></li>
 				<li class="menu_item"><a href="about.html">about us</a></li>
@@ -119,7 +119,7 @@
 	<!-- Home -->
 
 	<div class="home">
-		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/elements_background.jpg"></div>
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="<?= base_url('Home-css/images/elements_background.jpg'); ?>"></div>
 		<div class="home_content">
 			<div class="home_title">elements</div>
 		</div>
@@ -250,7 +250,7 @@
 							<!-- Milestone -->
 							<div class="col-lg-3 milestone_col">
 								<div class="milestone text-center">
-									<div class="milestone_icon"><img src="images/milestone_1.png" alt=""></div>
+									<div class="milestone_icon"><img src="<?= base_url('Home-css/images/milestone_1.png'); ?>" alt=""></div>
 									<div class="milestone_counter" data-end-value="255">0</div>
 									<div class="milestone_text">Clients</div>
 								</div>
@@ -259,7 +259,7 @@
 							<!-- Milestone -->
 							<div class="col-lg-3 milestone_col">
 								<div class="milestone text-center">
-									<div class="milestone_icon"><img src="images/milestone_2.png" alt=""></div>
+									<div class="milestone_icon"><img src="<?= base_url('Home-css/images/milestone_2.png'); ?>" alt=""></div>
 									<div class="milestone_counter" data-end-value="1176">0</div>
 									<div class="milestone_text">Projects</div>
 								</div>
@@ -268,7 +268,7 @@
 							<!-- Milestone -->
 							<div class="col-lg-3 milestone_col">
 								<div class="milestone text-center">
-									<div class="milestone_icon"><img src="images/milestone_3.png" alt=""></div>
+									<div class="milestone_icon"><img src="<?= base_url('Home-css/images/milestone_3.png'); ?>" alt=""></div>
 									<div class="milestone_counter" data-end-value="39">0</div>
 									<div class="milestone_text">Countries</div>
 								</div>
@@ -277,7 +277,7 @@
 							<!-- Milestone -->
 							<div class="col-lg-3 milestone_col">
 								<div class="milestone text-center">
-									<div class="milestone_icon"><img src="images/milestone_4.png" alt=""></div>
+									<div class="milestone_icon"><img src="<?= base_url('Home-css/images/milestone_4.png'); ?>" alt=""></div>
 									<div class="milestone_counter" data-end-value="127">0</div>
 									<div class="milestone_text">Coffees</div>
 								</div>
@@ -333,7 +333,7 @@
 
 							<div class="col-lg-4 icon_box text-left d-flex flex-column align-items-start justify-content-start">
 								<div class="icon_container d-flex flex-column justify-content-end">
-									<div><img src="images/icon_1.png" alt=""></div>
+									<div><img src="<?= base_url('Home-css/images/icon_1.png'); ?>" alt=""></div>
 								</div>
 								<h3>Cruises</h3>
 								<p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
@@ -341,7 +341,7 @@
 
 							<div class="col-lg-4 icon_box text-left d-flex flex-column align-items-start justify-content-start">
 								<div class="icon_container d-flex flex-column justify-content-end">
-									<div><img src="images/icon_2.png" alt=""></div>
+									<div><img src="<?= base_url('Home-css/images/icon_2.png'); ?>" alt=""></div>
 								</div>
 								<h3>Flights</h3>
 								<p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
@@ -349,7 +349,7 @@
 
 							<div class="col-lg-4 icon_box text-left d-flex flex-column align-items-start justify-content-start">
 								<div class="icon_container d-flex flex-column justify-content-end">
-									<div><img src="images/icon_3.png" alt=""></div>
+									<div><img src="<?= base_url('Home-css/images/icon_3.png'); ?>" alt=""></div>
 								</div>
 								<h3>Activities</h3>
 								<p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
@@ -365,7 +365,7 @@
 
 	<!-- Footer -->
 
-	<footer class="footer">
+	<footer class="footer"></footer>
 		<div class="container">
 			<div class="row">
 
@@ -374,7 +374,7 @@
 					<div class="footer_col">
 						<div class="footer_content footer_about">
 							<div class="logo_container footer_logo">
-								<div class="logo"><a href="#"><img src="images/logo.png" alt="">travelix</a></div>
+								<div class="logo"><a href="#"><img src="<?= base_url('Home-css/images/logo.png'); ?>" alt="">travelix</a></div>
 							</div>
 							<p class="footer_about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer eleme ntum orci eu vehicula pretium.</p>
 							<ul class="footer_social_list">
@@ -396,7 +396,7 @@
 							
 							<!-- Footer blog item -->
 							<div class="footer_blog_item clearfix">
-								<div class="footer_blog_image"><img src="images/footer_blog_1.jpg" alt="https://unsplash.com/@avidenov"></div>
+								<div class="footer_blog_image"><img src="<?= base_url('Home-css/images/footer_blog_1.jpg'); ?>" alt="https://unsplash.com/@avidenov"></div>
 								<div class="footer_blog_content">
 									<div class="footer_blog_title"><a href="blog.html">Travel with us this year</a></div>
 									<div class="footer_blog_date">Nov 29, 2017</div>
@@ -405,7 +405,7 @@
 							
 							<!-- Footer blog item -->
 							<div class="footer_blog_item clearfix">
-								<div class="footer_blog_image"><img src="images/footer_blog_2.jpg" alt="https://unsplash.com/@deannaritchie"></div>
+								<div class="footer_blog_image"><img src="<?= base_url('Home-css/images/footer_blog_2.jpg'); ?>" alt="https://unsplash.com/@deannaritchie"></div>
 								<div class="footer_blog_content">
 									<div class="footer_blog_title"><a href="blog.html">New destinations for you</a></div>
 									<div class="footer_blog_date">Nov 29, 2017</div>
@@ -414,7 +414,7 @@
 
 							<!-- Footer blog item -->
 							<div class="footer_blog_item clearfix">
-								<div class="footer_blog_image"><img src="images/footer_blog_3.jpg" alt="https://unsplash.com/@bergeryap87"></div>
+								<div class="footer_blog_image"><img src="<?= base_url('Home-css/images/footer_blog_3.jpg'); ?>" alt="https://unsplash.com/@bergeryap87"></div>
 								<div class="footer_blog_content">
 									<div class="footer_blog_title"><a href="blog.html">Travel with us this year</a></div>
 									<div class="footer_blog_date">Nov 29, 2017</div>
@@ -451,19 +451,19 @@
 						<div class="footer_content footer_contact">
 							<ul class="contact_info_list">
 								<li class="contact_info_item d-flex flex-row">
-									<div><div class="contact_info_icon"><img src="images/placeholder.svg" alt=""></div></div>
+									<div><div class="contact_info_icon"><img src="<?= base_url('Home-css/images/placeholder.svg'); ?>" alt=""></div></div>
 									<div class="contact_info_text">4127 Raoul Wallenber 45b-c Gibraltar</div>
 								</li>
 								<li class="contact_info_item d-flex flex-row">
-									<div><div class="contact_info_icon"><img src="images/phone-call.svg" alt=""></div></div>
+									<div><div class="contact_info_icon"><img src="<?= base_url('Home-css/images/phone-call.svg'); ?>" alt=""></div></div>
 									<div class="contact_info_text">2556-808-8613</div>
 								</li>
 								<li class="contact_info_item d-flex flex-row">
-									<div><div class="contact_info_icon"><img src="images/message.svg" alt=""></div></div>
+									<div><div class="contact_info_icon"><img src="<?= base_url('Home-css/images/message.svg'); ?>" alt=""></div></div>
 									<div class="contact_info_text"><a href="mailto:contactme@gmail.com?Subject=Hello" target="_top">contactme@gmail.com</a></div>
 								</li>
 								<li class="contact_info_item d-flex flex-row">
-									<div><div class="contact_info_icon"><img src="images/planet-earth.svg" alt=""></div></div>
+									<div><div class="contact_info_icon"><img src="<?= base_url('Home-css/images/planet-earth.svg'); ?>" alt=""></div></div>
 									<div class="contact_info_text"><a href="https://colorlib.com">www.colorlib.com</a></div>
 								</li>
 							</ul>
@@ -506,18 +506,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 </div>
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap4/popper.js"></script>
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/greensock/TweenMax.min.js"></script>
-<script src="plugins/greensock/TimelineMax.min.js"></script>
-<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
-<script src="plugins/greensock/animation.gsap.min.js"></script>
-<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
-<script src="plugins/progressbar/progressbar.min.js"></script>
-<script src="plugins/jquery-circle-progress-1.2.2/circle-progress.js"></script>
-<script src="plugins/parallax-js-master/parallax.min.js"></script>
-<script src="js/elements_custom.js"></script>
+<script src="<?= base_url('Home-css/js/jquery-3.2.1.min.js'); ?>"></script>
+<script src="<?= base_url('Home-css/styles/bootstrap4/popper.js'); ?>"></script>
+<script src="<?= base_url('Home-css/styles/bootstrap4/bootstrap.min.js'); ?>"></script>
+<script src="<?= base_url('Home-css/plugins/greensock/TweenMax.min.js'); ?>"></script>
+<script src="<?= base_url('Home-css/plugins/greensock/TimelineMax.min.js'); ?>"></script>
+<script src="<?= base_url('Home-css/plugins/scrollmagic/ScrollMagic.min.js'); ?>"></script>
+<script src="<?= base_url('Home-css/plugins/greensock/animation.gsap.min.js'); ?>"></script>
+<script src="<?= base_url('Home-css/plugins/greensock/ScrollToPlugin.min.js'); ?>"></script>
+<script src="<?= base_url('Home-css/plugins/progressbar/progressbar.min.js'); ?>"></script>
+<script src="<?= base_url('Home-css/plugins/jquery-circle-progress-1.2.2/circle-progress.js'); ?>"></script>
+<script src="<?= base_url('Home-css/plugins/parallax-js-master/parallax.min.js'); ?>"></script>
+<script src="<?= base_url('Home-css/js/elements_custom.js'); ?>"></script>
 
 </body>
 
