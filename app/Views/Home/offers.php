@@ -2,7 +2,7 @@
 <?= $this->extend('Home/layout-home'); ?>
 
 <?= $this->section('title') ?>
-Index
+Offers
 <?= $this->endSection() ?>
 
 <?= $this->section('Home-css') ?>
@@ -540,91 +540,6 @@ Index
 
 						<!-- Offers Item -->
 
-						<div class="offers_item rating_4">
-							<div class="row">
-								<div class="col-lg-1 temp_col"></div>
-								<div class="col-lg-3 col-1680-4">
-									<div class="offers_image_container">
-										<!-- Image by https://unsplash.com/@rktkn -->
-										<div class="offers_image_background" style="background-image:url(<?= base_url('Home-css/images/offer_7.jpg'); ?>)"></div>
-										<div class="offer_name"><a href="single_listing.html">eurostar hotel</a></div>
-									</div>
-								</div>
-								<div class="col-lg-8">
-									<div class="offers_content">
-										<div class="offers_price">$50<span>per night</span></div>
-										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
-											<i></i>
-											<i></i>
-											<i></i>
-											<i></i>
-											<i></i>
-										</div>
-										<p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet.</p>
-										<div class="offers_icons">
-											<ul class="offers_icons_list">
-												<li class="offers_icons_item"><img src="<?= base_url('Home-css/images/post.png'); ?>" alt=""></li>
-												<li class="offers_icons_item"><img src="<?= base_url('Home-css/images/compass.png'); ?>" alt=""></li>
-												<li class="offers_icons_item"><img src="<?= base_url('Home-css/images/bicycle.png'); ?>" alt=""></li>
-												<li class="offers_icons_item"><img src="<?= base_url('Home-css/images/sailboat.png'); ?>" alt=""></li>
-											</ul>
-										</div>
-										<div class="button book_button"><a href="#">book<span></span><span></span><span></span></a></div>
-										<div class="offer_reviews">
-											<div class="offer_reviews_content">
-												<div class="offer_reviews_title">very good</div>
-												<div class="offer_reviews_subtitle">100 reviews</div>
-											</div>
-											<div class="offer_reviews_rating text-center">8.1</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Offers Item -->
-
-						<div class="offers_item rating_3">
-							<div class="row">
-								<div class="col-lg-1 temp_col"></div>
-								<div class="col-lg-3 col-1680-4">
-									<div class="offers_image_container">
-										<!-- Image by https://unsplash.com/@itsnwa -->
-										<div class="offers_image_background" style="background-image:url(<?= base_url('Home-css/images/offer_8.jpg'); ?>)"></div>
-										<div class="offer_name"><a href="single_listing.html">grand castle</a></div>
-									</div>
-								</div>
-								<div class="col-lg-8">
-									<div class="offers_content">
-										<div class="offers_price">$90<span>per night</span></div>
-										<div class="rating_r rating_r_3 offers_rating" data-rating="3">
-											<i></i>
-											<i></i>
-											<i></i>
-											<i></i>
-											<i></i>
-										</div>
-										<p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet.</p>
-										<div class="offers_icons">
-											<ul class="offers_icons_list">
-												<li class="offers_icons_item"><img src="<?= base_url('Home-css/images/post.png'); ?>" alt=""></li>
-												<li class="offers_icons_item"><img src="<?= base_url('Home-css/images/compass.png'); ?>" alt=""></li>
-												<li class="offers_icons_item"><img src="<?= base_url('Home-css/images/bicycle.png'); ?>" alt=""></li>
-												<li class="offers_icons_item"><img src="<?= base_url('Home-css/images/sailboat.png'); ?>" alt=""></li>
-											</ul>
-										</div>
-										<div class="button book_button"><a href="#">book<span></span><span></span><span></span></a></div>
-										<div class="offer_reviews">
-											<div class="offer_reviews_content">
-												<div class="offer_reviews_title">very good</div>
-												<div class="offer_reviews_subtitle">100 reviews</div>
-											</div>
-											<div class="offer_reviews_rating text-center">8.1</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 
 					</div>
 				</div>
@@ -634,6 +549,66 @@ Index
 	</div>
 
 	<!-- Footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+$(document).ready(function() {
+    // Function to load tour listings via AJAX
+    function loadTours() {
+        $.ajax({
+            url: '<?= base_url('tour/load_tours'); ?>',
+            type: 'GET',
+            dataType: 'json',
+            success: function(data) {
+                if (data.status == 'success') {
+                    $('.offers_grid').empty();
+                    $.each(data.tours, function(index, tour) {
+                        var html = '<div class="offers_item">';
+                        html += '<div class="row">';
+                        html += '<div class="col-lg-1 temp_col"></div>';
+                        html += '<div class="col-lg-3 col-1680-4">';
+                        html += '<div class="offers_image_container">';
+                        html += '<div class="offers_image_background" style="background-image:url(' + tour.image_url + ')"></div>';
+                        html += '<div class="offer_name"><a href="<?= base_url('tour/detail/'); ?>' + tour.id + '">' + tour.name + '</a></div>';
+                        html += '</div></div>';
+                        html += '<div class="col-lg-8">';
+                        html += '<div class="offers_content">';
+                        html += '<div class="offers_price">$' + tour.price_per_person + '<span>per person</span></div>';
+                        html += '<div class="rating_r rating_r_' + Math.round(tour.rating) + ' offers_rating" data-rating="' + Math.round(tour.rating) + '">';
+                        for (var i = 0; i < 5; i++) {
+                            if (i < Math.round(tour.rating)) {
+                                html += '<i class="fa fa-star"></i>'; // Sao đầy
+                            } else {
+                                html += '<i class="fa fa-star-o"></i>'; // Sao rỗng
+                            }
+                        }
+                        html += '</div>';
+                        html += '<p class="offers_text">' + tour.description + '</p>';
+                        html += '<div class="button book_button"><a href="<?= base_url('tour/single_listing/'); ?>' + tour.id + '">Book</a></div>';
+
+                        html += '<div class="offer_reviews">';
+                        html += '<div class="offer_reviews_content">';
+                        html += '<div class="offer_reviews_title">' + tour.review_title + '</div>';
+                        html += '<div class="offer_reviews_subtitle">' + tour.review_count + ' reviews</div>';
+                        html += '</div>';
+                        html += '<div class="offer_reviews_rating text-center">' + tour.rating.toFixed(1) + '</div>'; // Đánh giá với 1 chữ số thập phân
+                        html += '</div></div></div></div></div>';
+                        $('.offers_grid').append(html);
+                    });
+                } else {
+                    $('.offers_grid').html('<p>No tours found.</p>');
+                }
+            },
+            error: function() {
+                $('.offers_grid').html('<p>Failed to load tours.</p>');
+            }
+        });
+    }
+
+    // Load tours on page load
+    loadTours();
+});
+</script>
 
 	<?= $this->endSection(); ?>
 	<?= $this->section('Home-scripts') ?>

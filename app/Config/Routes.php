@@ -13,7 +13,36 @@ $routes->get('elements', 'Home::index5');
 $routes->get('layout', 'Home::index6');
 $routes->get('test', 'Home::index7');
 $routes->get('single_listing', 'Home::index9');
-$routes->get('offers', 'Home::index8');
+
+
+$routes->group('tour', ['namespace' => 'App\Controllers'], function($routes) {
+    // Route cho danh sách tour
+    $routes->get('offers', 'TourController::index');
+    
+    // Route cho load danh sách tour bằng AJAX
+    $routes->get('load_tours', 'TourController::load_tours');
+    
+    // Route cho chi tiết tour
+    $routes->get('getTour/(:num)', 'TourController::getTour/$1');
+    
+    // Route cho load chi tiết tour bằng AJAX
+    $routes->get('load_detail/(:num)', 'TourController::load_detail/$1');
+
+    // Route chuyển đến trang chi tiết của tour
+    $routes->get('single_listing/(:num)', 'TourController::singleListing/$1');
+
+
+
+
+});
+
+$routes->group('tour', ['namespace' => 'App\Controllers'], function($routes) {
+    $routes->get('test', 'SingleController::index'); // Hiển thị danh sách các tour
+    $routes->get('detail/(:num)', 'SingleController::single_listing/$1'); // Hiển thị chi tiết tour với ID
+});
+
+
+
 // $routes->get('/test', 'TestController::index');
 
 $routes->group('api_Customers', function($routes) {

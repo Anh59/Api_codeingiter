@@ -53,7 +53,7 @@
                     success: function(response) {
                         if (response.status === 'success') {
                             showSuccessMessage("Thành công!", response.message);
-                            window.location.href = '<?= base_url('/') ?>';
+                            window.location.href = '<?= base_url('/index') ?>';
                         } else {
                             showErrorMessage("Lỗi", response.message);
                         }
