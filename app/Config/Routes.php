@@ -70,4 +70,6 @@ $routes->group('api_Customers', function($routes) {
 
 
 $routes->get('code','CumtomerController::code');
+
+$routes->get('codse','CumtomerController::code');
 $routes->get('test','CustomerController::test');
