@@ -66,10 +66,17 @@ $routes->group('api_Customers', function($routes) {
     $routes->get('google_login', 'GoogleController::googleLogin', ['as' => 'google_login']);
     $routes->get('google_callback', 'GoogleController::googleCallback', ['as' => 'google_callback']);
 
+
+    $routes->get('customers_profile','CustomersProfile', ['as' => 'customers_profile']);
+    
+
 });
 
 
 $routes->get('code','CumtomerController::code');
 
 $routes->get('codse','CumtomerController::code');
+$routes->get('test','CustomerController::test');
+
+
 $routes->get('test','CustomerController::test');
