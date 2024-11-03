@@ -68,7 +68,7 @@ $routes->group('api_Customers', function($routes) {
 
 
     $routes->get('customers_profile','CustomersProfile', ['as' => 'customers_profile']);
-    
+    $routes-get('customers_buy_tour','CustomersBuyTour',['as'])
 
 });
 
