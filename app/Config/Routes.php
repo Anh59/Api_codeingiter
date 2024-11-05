@@ -68,7 +68,7 @@ $routes->group('api_Customers', function($routes) {
 
 
     $routes->get('customers_profile','CustomersProfile', ['as' => 'customers_profile']);
-    $routes-get('customers_buy_tour','CustomersBuyTour',['as'])
+    $routes->get('customers_buy_tour','CustomersBuyTour',['as'=>'customers_buy_tour']);
 
 });
 
@@ -78,5 +78,6 @@ $routes->get('code','CumtomerController::code');
 $routes->get('codse','CumtomerController::code');
 $routes->get('test','CustomerController::test');
 
-
+$routes->get('test','CustomerController::test');
+$routes->get('test','CustomerController::test');
 $routes->get('test','CustomerController::test');
