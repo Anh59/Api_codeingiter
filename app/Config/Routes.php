@@ -81,3 +81,5 @@ $routes->get('test','CustomerController::test');
 $routes->get('test','CustomerController::test');
 $routes->get('test','CustomerController::test');
 $routes->get('test','CustomerController::test');
+$routes->get('test','CustomerController::test')
+;$routes->get('test','CustomerController::test');
