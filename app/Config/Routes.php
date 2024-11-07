@@ -76,10 +76,8 @@ $routes->group('api_Customers', function($routes) {
 $routes->get('code','CumtomerController::code');
 
 $routes->get('codse','CumtomerController::code');
-$routes->get('test','CustomerController::test');
 
 $routes->get('test','CustomerController::test');
-$routes->get('test','CustomerController::test');
-$routes->get('test','CustomerController::test');
-$routes->get('test','CustomerController::test')
-;$routes->get('test','CustomerController::test');
+
+$routes->get('profile','Home::profile');
+$routes->get('test-cu','Home::test');

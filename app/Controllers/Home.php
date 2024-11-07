@@ -44,4 +44,12 @@ class Home extends BaseController
     {
         return view('Home/single_listing');
     }
+    public function profile(): string
+    {
+        return view('Customer/profile');
+    }
+    public function test(): string
+    {
+        return view('Customer/test');
+    }
 }
