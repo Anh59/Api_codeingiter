@@ -1,0 +1,258 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    width: 80%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+}
+.sidebar .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.sidebar .profile img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.sidebar .profile .username {
+    font-weight: bold;
+}
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+}
+.sidebar .menu li {
+    margin-bottom: 10px;
+}
+.sidebar .menu li a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+.sidebar .menu li a:hover {
+    background-color: #f0f0f0;
+}
+.sidebar .menu li a i {
+    margin-right: 10px;
+}
+.sidebar .menu li a.active {
+    color: #ff5722;
+}
+.sidebar .submenu {
+    list-style: none;
+    padding-left: 20px;
+    margin: 0;
+    display: none;
+}
+.sidebar .submenu li {
+    margin-bottom: 5px;
+}
+.sidebar .submenu li a {
+    text-decoration: none;
+    color: #666;
+}
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+.card-body {
+    padding: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-outline-primary {
+    background-color: #fff;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+.btn-default {
+    background-color: #f8f9fa;
+    color: #333;
+}
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+.alert {
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+.media-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.account-settings-fileinput {
+    display: none;
+}
+.custom-file-label {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #007bff;
+    background-color: #fff;
+    margin-right: 10px;
+}
+.custom-file-label:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+.profile-pic {
+    display: flex;
+    align-items: center;
+}
+.profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.profile-pic .media-body {
+    display: flex;
+    align-items: center;
+}
+.profile-pic .text-light {
+    font-size: 12px;
+}
+.order-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.order-card img {
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.order-info {
+    flex: 1;
+}
+.order-info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+.order-info p {
+    margin: 5px 0;
+    color: #666;
+}
+.order-info .price {
+    font-weight: bold;
+    color: #007bff;
+}
+.order-info .discount {
+    text-decoration: line-through;
+    color: #999;
+}
+.order-info .total-price {
+    font-size: 16px;
+    color: #ff5722;
+}
+.order-info .status {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.order-info .status.paid {
+    color: green;
+}
+.order-info .status.unpaid {
+    color: red;
+}
+.order-info .status.pending {
+    color: orange;
+}
+.order-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.order-actions .btn {
+    margin-bottom: 10px;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.pagination a {
+    text-decoration: none;
+    color: #007bff;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.pagination a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+.pagination a.active {
+    background-color: #007bff;
+    color: #fff;
+}

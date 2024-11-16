@@ -74,10 +74,14 @@ $routes->group('api_Customers', function($routes) {
 
 
 $routes->get('code','CumtomerController::code');
-
-$routes->get('codse','CumtomerController::code');
-
 $routes->get('test','CustomerController::test');
-
 $routes->get('profile','Home::profile');
 $routes->get('test-cu','Home::test');
+
+
+
+
+$routes->get('personal','ProfileController::personal_info');
+$routes->get('password','ProfileController::changepassword');
+$routes->get('order','ProfileController::Order');
+$routes->get('testgi','ProfileController::test');
